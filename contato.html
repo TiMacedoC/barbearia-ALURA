@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contato</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="imagens/logo.png">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <form class="formulario" action="">
+            <label for="nome">Nome e Sobrenome</label>
+            <input id="nome" type="text" autocomplete="new-password" class="input-padrao"
+                placeholder="Insira o seu nome">
+
+            <label for="email">Email</label>
+            <input id="email" type="text" autocomplete="new-password" class="input-padrao"
+                placeholder="email@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input id="telefone" type="number" autocomplete="false" class="input-padrao" placeholder="(XX)  XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea class="input-padrao" name="" id="mensagem" rows="8"></textarea>
+
+            <div class="radio-inputs">
+                <p class="label" style="margin-top: 20px;">Como prefere o nosso contato?</p>
+
+                <label for="radio-email"><input id="radio-email" type="radio" value="email" name="contato">
+                    Email</label>
+
+
+                <label for="radio-telefone"><input id="radio-telefone" type="radio" value="telefone" name="contato">
+                    Telefone</label>
+
+
+                <label for="radio-whatsapp"><input id="radio-whatsapp" type="radio" value="whatsapp" name="contato">
+                    WhatsApp</label>
+
+            </div>
+
+            <div class="horario-de-atendimento">
+                <p class="label" style="margin-top: 20px;">Qual horário prefere ser atendido</p>
+                <select>
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </div>
+
+
+            <label id="check-box"><input type="checkbox">Gostaria de receber nossas novidades por Email?</label>
+
+
+            <input id="button" type="button" value="Enviar">
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="imagens/logo-branco.png">
+            <p>&copy; Copyright Barbearia Alura - 2019</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

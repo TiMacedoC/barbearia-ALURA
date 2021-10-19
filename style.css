@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #CCCCCC;
+}
+
+header img{
+    width: 200px;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: auto;
+    padding: 3% 5%;
+
+}
+
+.links {
+    margin: 0;
+}
+
+.links li {
+    display: inline;
+}
+
+header a {
+    color: black;
+    font-size: 21px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 3px;
+    text-transform: uppercase;
+}
+
+header a:hover{
+    color: #5a5313;
+    text-decoration: underline;
+}
+
+header a:active {
+    color: #088c19;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: auto;
+    padding: 3% 5%;
+}
+
+.cards {
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    width: 275px;
+    height: 420px;
+    padding: 6% 0;
+}
+
+.cards:hover {
+    border: 4px solid #a39725; 
+}
+
+.cards:hover h2 {
+    font-size: 28px;
+}
+
+.cards:active {
+    border: 4px solid #088c19;
+}
+
+.cards img{
+    width: 230px;
+}
+
+
+.cards h2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.cards p {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+footer{
+    background: url('imagens/bg.jpg');
+}
+
+footer p {
+    color: white;
+    font-size: 13px;
+}
+
+.footer-content{
+    text-align: center;
+
+    max-width: 1600px;
+    margin: auto;
+    padding: 25px 0;
+}
+
+/* CONTATO */
+
+.main-content {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 3% 5%;
+
+}
+
+.input-padrao{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 50%;
+    resize: none;
+}
+
+#button {
+    width: 30%;
+    background: orange;
+    color: aliceblue;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+
+form label, form .label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.radio-inputs label,
+.radio-inputs input,
+#check-box, 
+#check-box input {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 4px 6px 4px 0px;
+}
+
+#check-box {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Remove a setinha do input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* RESPONSIVIDADE*/
+@media (max-width: 920px){
+
+    .produtos {
+        flex-direction: column;
+    }
+
+    .cards img {
+        width: 80px;
+        order: -1;
+    }
+
+    .cards {
+        padding: 1% 5%;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+        margin-top: 5px;
+        height: 93px;
+
+    }
+
+    
+    header img{
+        width: 23%;
+    }
+
+}
+
+
