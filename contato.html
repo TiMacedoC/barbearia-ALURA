@@ -25,23 +25,24 @@
 
     <main class="main-content">
 
-        <form class="formulario" action="">
+        <!-- <form class="formulario" action="">
             <label for="nome">Nome e Sobrenome</label>
             <input id="nome" type="text" autocomplete="new-password" class="input-padrao"
-                placeholder="Insira o seu nome">
+                placeholder="Insira o seu nome" required>
 
             <label for="email">Email</label>
             <input id="email" type="email" autocomplete="new-password" class="input-padrao"
-                placeholder="email@dominio.com">
+                placeholder="email@dominio.com" required>
 
             <label for="telefone">Telefone</label>
-            <input id="telefone" type="tel" autocomplete="false" class="input-padrao" placeholder="(XX)  XXXXX-XXXX">
+            <input id="telefone" type="tel" autocomplete="false" class="input-padrao" placeholder="(XX) XXXXX-XXXX"
+                required>
 
             <label for="mensagem">Mensagem</label>
             <textarea class="input-padrao" name="" id="mensagem" rows="8"></textarea>
 
-            <div class="radio-inputs">
-                <p class="label" style="margin-top: 20px;">Como prefere o nosso contato?</p>
+            <fieldset class="radio-inputs">
+                <legend class="label" style="margin-top: 20px;">Como prefere o nosso contato?</legend>
 
                 <label for="radio-email"><input id="radio-email" type="radio" value="email" name="contato">
                     Email</label>
@@ -51,26 +52,57 @@
                     Telefone</label>
 
 
-                <label for="radio-whatsapp"><input id="radio-whatsapp" type="radio" value="whatsapp" name="contato">
+                <label for="radio-whatsapp"><input id="radio-whatsapp" type="radio" value="whatsapp" name="contato"
+                        checked>
                     WhatsApp</label>
 
-            </div>
+            </fieldset>
 
-            <div class="horario-de-atendimento">
-                <p class="label" style="margin-top: 20px;">Qual horário prefere ser atendido</p>
+            <fieldset class="horario-de-atendimento">
+                <legend class="label" style="margin-top: 20px;">Qual horário prefere ser atendido</legend>
                 <select>
                     <option value="manha">Manhã</option>
                     <option value="tarde">Tarde</option>
                     <option value="noite">Noite</option>
                 </select>
-            </div>
+            </fieldset>
 
 
             <label id="check-box"><input type="checkbox">Gostaria de receber nossas novidades por Email?</label>
 
 
             <input id="button" type="button" value="Enviar">
-        </form>
+        </form> -->
+
+        <table class="funcionamento">
+
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 22h</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>10h ~ 18h</td>
+                </tr>
+            </tbody>
+
+        </table>
 
     </main>
 
